@@ -1,0 +1,26 @@
+
+  .location {
+    animation: flipPause 2s ease-in-out infinite;
+  }
+
+  @keyframes flipPause {
+    0% {
+      transform: rotateY(0deg);
+    }
+    40% {
+      transform: rotateY(180deg);
+    }
+    60% {
+      transform: rotateY(180deg); /* Hold position */
+    }
+    100% {
+      transform: rotateY(0deg);
+    }
+  }
+
+  .location:hover {
+    animation-play-state: paused;
+  } 
+
+
+
