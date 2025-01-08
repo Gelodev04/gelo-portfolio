@@ -41,7 +41,7 @@ function App() {
             <div className="absolute">
               <div className="w-[1px] h-[600px] top-3  bg-[#2b2b2b] relative">
                 <div className="w-[8px] right-1/2 -translate-x-1/2 h-[8px] bg-[#1d1b1b] rounded-[50%]"></div>
-                <div className="w-[8px] translate-y-[23.6rem]  right-1/2 -translate-x-1/2 h-[8px] bg-[#1d1b1b] rounded-[50%]"></div>
+                
               </div>
             </div>
             <div className="pl-4">
