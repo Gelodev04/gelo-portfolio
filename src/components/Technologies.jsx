@@ -9,6 +9,7 @@ import social from "./images/social.png";
 import tailwind from "./images/tailwind.png";
 import typescript from "./images/typescript.png";
 import react from "./images/react.png";
+import nodejs from "./images/nodejs.png";
 
 function Technologies() {
   return (
@@ -19,7 +20,7 @@ function Technologies() {
           Technologies/Tools
         </h1>
       </div>
-      <div className="max-w-[400px] pt-5">
+      <div className=" pt-5 px-3 ">
         <ul className="grid grid-cols-3 gap-y-4 gap-x-3 tracking-wider">
           {[
             { name: "HTML", img: html },
@@ -31,10 +32,11 @@ function Technologies() {
             { name: "TypeScript", img: typescript },
             { name: "React", img: react },
             { name: "GitHub", img: githubdark },
+            { name: "NodeJS", img: nodejs },
           ].map((tech, index) => (
             <li
               key={index}
-              className="button-64 rounded-3xl text-[#008cff] bg-[#1d1374] bg-opacity-30"
+              className="w-[120px] rounded-3xl text-[#008cff] bg-[#1d1374] bg-opacity-30"
             >
               <span className="text flex items-center justify-center gap-1">
                 {tech.name}{" "}

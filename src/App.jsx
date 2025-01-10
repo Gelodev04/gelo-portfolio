@@ -29,10 +29,10 @@ function App() {
         className="gradient-background min-h-screen scrollbar  overflow-hidden relative"
         onMouseMove={handleMouseMove}
         style={{
-          background: `radial-gradient(circle at ${gradientPosition.x}% ${gradientPosition.y}%, #080808 10%, black 70%)`,
+          background: `radial-gradient(circle at ${gradientPosition.x}% ${gradientPosition.y}%, #1a1919 2%, #0a0a0a 70%)`,
         }}
       >
-        <div className="pl-10 pt-5 z-[9999] absolute overflow-y-scroll h-[100vh]">
+        <div className="pl-6 pt-5 z-[9999] absolute overflow-y-scroll h-[100vh]">
           <Name />
           <Contact />
 
@@ -40,7 +40,7 @@ function App() {
             {/* SECTION LINE */}
             <div className="absolute">
               <div className="w-[1px] h-[600px] top-3  bg-[#2b2b2b] relative">
-                <div className="w-[8px] right-1/2 -translate-x-1/2 h-[8px] bg-[#1d1b1b] rounded-[50%]"></div>
+                
                 
               </div>
             </div>
