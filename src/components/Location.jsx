@@ -7,7 +7,7 @@ import 'animate.css';
 
 function Location() {
   return (
-    <div className="pt-2 pb-2 flex items-center group">
+    <div className="  flex items-center group">
     <img
       className="cursor-pointer location w-[23px] mr-2"
       src={locationDark}

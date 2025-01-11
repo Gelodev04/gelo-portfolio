@@ -10,38 +10,45 @@ import tailwind from "./images/tailwind.png";
 import typescript from "./images/typescript.png";
 import react from "./images/react.png";
 import nodejs from "./images/nodejs.png";
-
+import nextjs from "./images/nextjs.png";
 function Technologies() {
   return (
-    <div className="text-[#D3D3D3] pt-10">
-      <div className="flex items-center ">
-        <div className="w-[8px] -translate-x-[1.2rem] h-[8px] bg-[#1d1b1b] rounded-[50%]"></div>
-        <h1 className="text-2xl tracking-wider font-semibold">
+    <div className=" pt-8 text-white">
+      <div className="   max-w-[400px]  ">
+        <h1 className="text-2xl tracking-wider font-semibold ">
           Technologies/Tools
         </h1>
-      </div>
-      <div className=" pt-5 px-3 ">
-        <ul className="grid grid-cols-3 gap-y-4 gap-x-3 tracking-wider">
+        <ul className="flex flex-wrap  gap-2 mt-2">
           {[
-            { name: "HTML", img: html },
-            { name: "CSS", img: css },
-            { name: "JavaScript", img: js },
-            { name: "NPM", img: npm },
-            { name: "Git", img: social },
-            { name: "Tailwind", img: tailwind },
-            { name: "TypeScript", img: typescript },
-            { name: "React", img: react },
-            { name: "GitHub", img: githubdark },
-            { name: "NodeJS", img: nodejs },
+            { name: "HTML", img: html, description: "Markup Language" },
+            { name: "CSS", img: css, description: "Styling Sheets" },
+            { name: "JavaScript", img: js, description: "Dynamic Scripting" },
+            { name: "NPM", img: npm, description: "Package Manager" },
+            { name: "Git", img: social, description: "Version Control" },
+            { name: "Tailwind", img: tailwind, description: "Utility CSS" },
+            {
+              name: "TypeScript",
+              img: typescript,
+              description: "Typed JavaScript",
+            },
+            { name: "React", img: react, description: "UI Library" },
+            { name: "GitHub", img: githubdark, description: "Code Hosting" },
+            { name: "NodeJS", img: nodejs, description: "Server-side JS" },
+            { name: "NextJS", img: nextjs, description: "React Framework" },
           ].map((tech, index) => (
             <li
               key={index}
-              className="w-[120px] rounded-3xl text-[#008cff] bg-[#1d1374] bg-opacity-30"
+              className="px-3 py-1  bg-opacity-30 bg-gray-600 rounded-md"
             >
-              <span className="text flex items-center justify-center gap-1">
-                {tech.name}{" "}
-                <img className="w-[18px]" src={tech.img} alt={tech.name} />
-              </span>
+              <div className=" flex   items-center   gap-2">
+                <img className="w-[25px]" src={tech.img} alt={tech.name} />
+                <div className="flex flex-col ">
+                  <p className="font-medium tracking-wider">{tech.name}</p>
+                  <p className="text-center lowercase text-sm text-[#D3D3D3]">
+                    {tech.description}
+                  </p>
+                </div>
+              </div>
             </li>
           ))}
         </ul>
