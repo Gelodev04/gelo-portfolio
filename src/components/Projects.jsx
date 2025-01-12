@@ -12,6 +12,8 @@ import react from "./images/react.png";
 import nodejs from "./images/nodejs.png";
 import nextjs from "./images/nextjs.png";
 import rightarrow from "./images/rightarrow.png";
+import project2 from "./images/project2.png"
+
 function Projects() {
   const project = [
     {
@@ -24,9 +26,9 @@ function Projects() {
       ],
     },
     {
-      title: "WebCrafter",
-      screenshot: webdev,
-      description: "A website development company",
+      title: "Portfolio",
+      screenshot: project2,
+      description: "A personal portfolio project for school",
       technologies: [
         { name: "React", img: react },
         { name: "Tailwind", img: tailwind },
@@ -44,7 +46,7 @@ function Projects() {
         {project.map((project) => (
           <div
             key={project.title}
-            className="bg-black h-[350px] rounded-md relative overflow-hidden group mt-4"
+            className="bg-black h-[310px] rounded-md relative overflow-hidden group mt-4"
           >
             <div
               className="absolute inset-0 bg-cover bg-center transition-transform duration-300 ease-in-out group-hover:scale-105"
