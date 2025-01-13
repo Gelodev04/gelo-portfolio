@@ -21,7 +21,7 @@ function Projects({ projects }) {
   const project = [
     {
       title: "WebCrafter",
-      url: "",
+      url: "https://gelodev04.github.io/webdev-company/",
       screenshot: webdev,
       description:
         "My first personal project: a template for a web development company website.",
