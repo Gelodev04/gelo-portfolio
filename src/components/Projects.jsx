@@ -13,11 +13,13 @@ import nodejs from "./images/nodejs.png";
 import nextjs from "./images/nextjs.png";
 import rightarrow from "./images/rightarrow.png";
 import project2 from "./images/project2.png";
+import project3 from "./images/project3.png"
 
 function Projects() {
   const project = [
     {
       title: "WebCrafter",
+      url : "",
       screenshot: webdev,
       description:
         "My first personal project: a template for a web development company website.",
@@ -28,8 +30,19 @@ function Projects() {
     },
     {
       title: "Portfolio",
+      url : "",
       screenshot: project2,
       description: "A personal portfolio project for school",
+      technologies: [
+        { name: "React", img: react },
+        { name: "Tailwind", img: tailwind },
+      ],
+    },
+    {
+      title: "Type Faster",
+      url : "https://gelodev04.github.io/typing-speed-test/",
+      screenshot: project3,
+      description: "A typing speed test game designed for quick warm-ups with its short sentences.",
       technologies: [
         { name: "React", img: react },
         { name: "Tailwind", img: tailwind },
@@ -74,6 +87,7 @@ function Projects() {
               {/* buttons */}
 
               <div className="flex items-center gap-2">
+                <a href={project.url} target="_blank">
                 <button className="mt-2 border bg-white  text-black rounded-[4px] px-[4px] flex items-center gap-1">
                   <span className="font-semibold">Visit</span>
                   <svg
@@ -99,6 +113,7 @@ function Projects() {
                     </defs>
                   </svg>
                 </button>
+                </a>
                 <button className="mt-2 border bg-white  text-black rounded-[4px] px-[4px] flex items-center gap-1">
                   <span className="font-semibold">Code</span>
                   <svg
