@@ -11,14 +11,16 @@ import typescript from "./images/typescript.png";
 import react from "./images/react.png";
 import nodejs from "./images/nodejs.png";
 import nextjs from "./images/nextjs.png";
+
+
 function Technologies() {
   return (
     <div className=" pt-8 text-white">
       <div className="   max-w-[400px]  ">
-        <h1 className="text-2xl tracking-wider font-semibold ">
-          Technologies/Tools
+        <h1 className="text-4xl tracking-wider font-semibold ">
+          Skills
         </h1>
-        <ul className="flex flex-wrap  gap-2 mt-2">
+        <ul className="flex flex-wrap gap-1  mt-2">
           {[
             { name: "HTML", img: html, description: "Markup Language" },
             { name: "CSS", img: css, description: "Styling Sheets" },
@@ -38,13 +40,13 @@ function Technologies() {
           ].map((tech, index) => (
             <li
               key={index}
-              className="px-3 py-1  bg-opacity-30 bg-gray-600 rounded-md"
+              className="px-3 py-[2px]  bg-opacity-40 bg-black rounded-md "
             >
               <div className=" flex   items-center   gap-2">
                 <img className="w-[25px]" src={tech.img} alt={tech.name} />
-                <div className="flex flex-col ">
-                  <p className="font-medium tracking-wider">{tech.name}</p>
-                  <p className="text-center lowercase text-sm text-[#D3D3D3]">
+                <div className="flex flex-col -space-y-2">
+                  <p className="font-medium text-lg tracking-wider">{tech.name}</p>
+                  <p className="text-center lowercase text-sm text-[#aaaaaa]">
                     {tech.description}
                   </p>
                 </div>

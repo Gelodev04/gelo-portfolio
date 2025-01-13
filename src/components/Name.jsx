@@ -13,7 +13,7 @@ function Name() {
       </div>
       <div className="flex items-center justify-center">
       <h1 className="text-[2.8rem] tracking-widest font-medium">hi gelo here</h1>
-      <img className="w-[45px]" src={hello} alt="hello" />
+      
       </div>
       <p className="text-xl font-medium tracking-wide text-[#D3D3D3]">Front-End Developer</p>
       <div className="flex items-center justify-center">

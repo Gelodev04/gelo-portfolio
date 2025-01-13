@@ -29,10 +29,8 @@ function App() {
       <div
         id="style-1"
         className="gradient-background min-h-screen scrollbar  overflow-hidden relative "
-        onMouseMove={handleMouseMove}
-        style={{
-          background: `radial-gradient(circle at ${gradientPosition.x}% ${gradientPosition.y}%, #1a1919 2%, #0a0a0a 70%)`,
-        }}
+        
+        
       >
         <div className="absolute pt-1 z-[9999]  overflow-y-scroll h-[100vh]">
           <Navbar/>

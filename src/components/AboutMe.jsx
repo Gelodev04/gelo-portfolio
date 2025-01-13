@@ -8,10 +8,10 @@ function AboutMe() {
     <div className="text-white mt-8  text-lg">
      
         
-    <h1 className="text-2xl  font-semibold tracking-wider">About Me</h1>
+    <h1 className="text-4xl  font-semibold tracking-wider ">About Me</h1>
       
 
-      <div className=" mt-2">
+      <div className=" mt-2 text-[#d3d3d3]">
         <p className="">
         Hi! I’m a front-end developer with a strong passion for programming. I’m curious, adaptable, and always excited to learn and master new technologies.
         </p>
