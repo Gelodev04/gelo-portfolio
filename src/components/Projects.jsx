@@ -7,7 +7,6 @@ import js from "./images/js.png";
 import npm from "./images/npm.png";
 import social from "./images/social.png";
 import tailwind from "./images/tailwind.png";
-
 import react from "./images/react.png";
 import nodejs from "./images/nodejs.png";
 import nextjs from "./images/nextjs.png";
@@ -16,6 +15,7 @@ import project2 from "./images/project2.png";
 import project3 from "./images/project3.png";
 import typescript from "./images/typescript.png";
 import project3video from "./videos/cutvideo.mp4";
+import project2video from "./videos/project2.mp4"
 
 function Projects({ projects }) {
   const project = [
@@ -32,7 +32,8 @@ function Projects({ projects }) {
     },
     {
       title: "Portfolio",
-      url: "",
+      video: project2video,
+      url: "https://gelodev04.github.io/my-portfolio/",
       screenshot: project2,
       description: "A personal portfolio project for school",
       technologies: [
