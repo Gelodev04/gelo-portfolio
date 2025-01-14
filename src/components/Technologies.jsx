@@ -20,7 +20,7 @@ function Technologies() {
         <h1 className="text-4xl tracking-wider font-semibold ">
           Skills
         </h1>
-        <ul className="grid grid-cols-3 justify-center items-center gap-1 w-[380px] mt-2">
+        <ul className="grid grid-cols-3 md:flex flex-wrap  gap-1  mt-2">
           {[
             { name: "HTML", img: html, description: "Structuring" },
             { name: "CSS", img: css, description: "Styling " },

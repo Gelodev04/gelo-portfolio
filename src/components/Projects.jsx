@@ -49,7 +49,7 @@ function Projects({ projects }) {
       description:
         "A typing speed test game designed for quick warm-ups with its short sentences.",
       technologies: [
-        { name: "React", img: react },
+        { name: "NextJS", img: nextjs },
         { name: "Tailwind", img: tailwind },
         { name: "Typescript", img: typescript },
       ],
@@ -78,11 +78,11 @@ function Projects({ projects }) {
           Projects
         </h1>
 
-        <div className="flex flex-col gap-3 justify-center">
+        <div className="flex flex-col gap-3">
           {project.map((project) => (
             <div
               key={project.title}
-              className="h-[250px] max-h-[500px] rounded-sm relative overflow-hidden group  max-w-[600px] mt-2"
+              className="h-[280px] md:h-[370px] lg:h-[420px]  rounded-sm relative overflow-hidden group   mt-2"
               onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             >
@@ -113,7 +113,7 @@ function Projects({ projects }) {
                   {project.technologies.map((tech) => (
                     <li
                       key={tech.name}
-                      className="flex items-center space-x-1 border px-2 py-[1px] rounded-[4px] border-tr "
+                      className="flex items-center space-x-1 border px-2 py-[1px] rounded-[4px] border-tr lowercase"
                     >
                       <img src={tech.img} alt={tech.name} className="w-5 " />
                       <span className="text">{tech.name}</span>
