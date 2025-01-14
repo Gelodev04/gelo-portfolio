@@ -43,7 +43,7 @@ function Projects({ projects }) {
     },
     {
       title: "Type Faster",
-      url: "https://gelodev04.github.io/typing-speed-test/",
+      url: "https://typing-speed-game-chi.vercel.app/",
       video: project3video,
       screenshot: project3,
       description:
