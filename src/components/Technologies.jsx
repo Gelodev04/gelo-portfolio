@@ -11,7 +11,7 @@ import typescript from "./images/typescript.png";
 import react from "./images/react.png";
 import nodejs from "./images/nodejs.png";
 import nextjs from "./images/nextjs.png";
-
+import bootstrap from "./images/bootstrap.png"
 
 function Technologies() {
   return (
@@ -20,7 +20,7 @@ function Technologies() {
         <h1 className="text-4xl tracking-wider font-semibold ">
           Skills
         </h1>
-        <ul className="grid grid-cols-3 md:flex flex-wrap  gap-1  mt-2">
+        <ul className="grid grid-cols-3 md:flex flex-wrap  gap-1  mt-2 md:gap-x-2 ">
           {[
             { name: "HTML", img: html, description: "Structuring" },
             { name: "CSS", img: css, description: "Styling " },
@@ -37,16 +37,17 @@ function Technologies() {
             { name: "GitHub", img: githubdark, description: "Code Hosting" },
             { name: "NodeJS", img: nodejs, description: "Server-side JS" },
             { name: "NextJS", img: nextjs, description: "optimization" },
+            { name: "Bootstrap", img: bootstrap, description: "toolkit" },
           ].map((tech, index) => (
             <li
               key={index}
-              className="pl-2  py-1 bg-opacity-40 bg-black rounded-md "
+              className="pl-2  py-1 bg-opacity-40 bg-black rounded-md lg:px-2 md:px-2 "
             >
-              <div className=" flex gap-1   items-center   ">
-                <img className="w-[20px]" src={tech.img} alt={tech.name} />
+              <div className=" flex gap-1 md:gap-2   items-center   ">
+                <img className="w-[20px] md:w-[25px]" src={tech.img} alt={tech.name} />
                 <div className="flex flex-col -space-y-2">
-                  <p className="font-medium text-m tracking-wider">{tech.name}</p>
-                  <p className="text-center lowercase text-sm text-[#aaaaaa]">
+                  <p className="font-medium md:text-lg tracking-wider">{tech.name}</p>
+                  <p className=" lowercase text-sm text-[#aaaaaa]">
                     {tech.description}
                   </p>
                 </div>
