@@ -4,10 +4,10 @@ import moon from "./images/moon.png";
 function Navbar() {
   return (
     <nav className="flex justify-between px-3 items-center">
-      <h1 className="text-[#ffffff] text-xl font-medium tracking-wider lowercase">
+      <h1 className="text-[#ffffff] text-xl font-medium tracking-wider lowercase cursor-pointer">
         Angelo Manalo
       </h1>
-      <svg className="w-[26px]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg className="w-[26px] cursor-pointer" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g
           id="SVGRepo_tracerCarrier"

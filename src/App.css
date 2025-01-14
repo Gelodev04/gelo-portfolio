@@ -7,8 +7,10 @@ body{
     margin: 0;
     box-sizing: border-box;
     font-family: "Afacad Flux", serif;
-    
     background-color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 ::-webkit-scrollbar {

@@ -29,28 +29,19 @@ function App() {
       <div
         id="style-1"
         className="gradient-background min-h-screen scrollbar  overflow-hidden relative "
-        
-        
       >
-        <div className="absolute pt-1 z-[9999]  overflow-y-scroll h-[100vh]">
-          <Navbar/>
+        <div className="max-w-[950px]   pt-1 z-[9999]  overflow-y-scroll h-[100vh] ">
+          <Navbar />
           <Name />
           <Contact />
 
-          
-            
-            
-            
-           <div className="mx-7">
-            <AboutMe/>
-         <Technologies />
-         <Projects/>
-         <div className="h-screen"></div>
-         </div>
-          
+          <div className="mx-7 mt-10">
+            <AboutMe />
+            <Technologies />
+            <Projects />
+            <div className="h-screen"></div>
+          </div>
         </div>
-
-        <BackgroundText />
       </div>
     </>
   );

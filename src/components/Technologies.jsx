@@ -15,17 +15,17 @@ import nextjs from "./images/nextjs.png";
 
 function Technologies() {
   return (
-    <div className=" pt-8 text-white">
-      <div className="   max-w-[400px]  ">
+    <div className="  text-white mt-5">
+      <div className="">
         <h1 className="text-4xl tracking-wider font-semibold ">
           Skills
         </h1>
-        <ul className="flex flex-wrap gap-1  mt-2">
+        <ul className="grid grid-cols-3 justify-center items-center gap-1 w-[380px] mt-2">
           {[
-            { name: "HTML", img: html, description: "Markup Language" },
-            { name: "CSS", img: css, description: "Styling Sheets" },
-            { name: "JavaScript", img: js, description: "Dynamic Scripting" },
-            { name: "NPM", img: npm, description: "Package Manager" },
+            { name: "HTML", img: html, description: "Structuring" },
+            { name: "CSS", img: css, description: "Styling " },
+            { name: "JavaScript", img: js, description: "interactive" },
+            { name: "NPM", img: npm, description: "Packages " },
             { name: "Git", img: social, description: "Version Control" },
             { name: "Tailwind", img: tailwind, description: "Utility CSS" },
             {
@@ -36,16 +36,16 @@ function Technologies() {
             { name: "React", img: react, description: "UI Library" },
             { name: "GitHub", img: githubdark, description: "Code Hosting" },
             { name: "NodeJS", img: nodejs, description: "Server-side JS" },
-            { name: "NextJS", img: nextjs, description: "React Framework" },
+            { name: "NextJS", img: nextjs, description: "optimization" },
           ].map((tech, index) => (
             <li
               key={index}
-              className="px-3 py-[2px]  bg-opacity-40 bg-black rounded-md "
+              className="pl-2  py-1 bg-opacity-40 bg-black rounded-md "
             >
-              <div className=" flex   items-center   gap-2">
-                <img className="w-[25px]" src={tech.img} alt={tech.name} />
+              <div className=" flex gap-1   items-center   ">
+                <img className="w-[20px]" src={tech.img} alt={tech.name} />
                 <div className="flex flex-col -space-y-2">
-                  <p className="font-medium text-lg tracking-wider">{tech.name}</p>
+                  <p className="font-medium text-m tracking-wider">{tech.name}</p>
                   <p className="text-center lowercase text-sm text-[#aaaaaa]">
                     {tech.description}
                   </p>

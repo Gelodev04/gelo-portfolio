@@ -7,7 +7,7 @@ import hello from "./images/hello.png"
 
 function Name() {
   return (
-    <div className="text-white    text-center mt-5">
+    <div className="text-white mx-7    text-center mt-5">
       <div className="shadow-2xl mx-auto border-[1.9px] border-[#413d3d] rounded-full  w-[180px]">
         <img className="rounded-full " src={profilepic} alt="" />
       </div>

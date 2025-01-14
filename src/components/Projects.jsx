@@ -73,16 +73,16 @@ function Projects({ projects }) {
   };
   return (
     <>
-      <div className="pt-8">
+      <div className="mt-6">
         <h1 className="text-4xl tracking-wider font-semibold text-white">
           Projects
         </h1>
 
-        <div className="">
+        <div className="flex flex-col gap-3 justify-center">
           {project.map((project) => (
             <div
               key={project.title}
-              className="bg-black h-[250px] rounded-sm relative overflow-hidden group mt-4"
+              className="h-[250px] max-h-[500px] rounded-sm relative overflow-hidden group  max-w-[600px] mt-2"
               onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
             >
