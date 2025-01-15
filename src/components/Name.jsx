@@ -7,12 +7,12 @@ import hello from "./images/hello.png"
 
 function Name() {
   return (
-    <div className="text-white mx-7    text-center mt-5">
+    <div id="angelomanalo" className="text-white mx-7    text-center mt-5 scroll-mt-20">
       <div className="shadow-2xl mx-auto border-[1.9px] border-[#413d3d] rounded-full  w-[180px]">
         <img className="rounded-full " src={profilepic} alt="" />
       </div>
       <div className="flex items-center justify-center">
-      <h1 className="text-[2.8rem] tracking-widest font-medium">hi gelo here</h1>
+      <h1  className="text-[2.8rem] tracking-widest font-medium">hi gelo here</h1>
       
       </div>
       <p className="text-xl font-medium tracking-wide text-[#D3D3D3]">Front-End Developer</p>

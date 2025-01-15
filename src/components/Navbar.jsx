@@ -3,10 +3,12 @@ import moon from "./images/moon.png";
 
 function Navbar() {
   return (
-    <nav className="flex justify-between px-3 items-center">
+    <nav className="flex justify-between px-3 items-center top-0 sticky backdrop-blur-md z-[99999] py-1 ">
+      <a href="#angelomanalo">
       <h1 className="text-[#ffffff] text-xl font-medium tracking-wider lowercase cursor-pointer">
         Angelo Manalo
       </h1>
+      </a>
       <svg className="w-[26px] cursor-pointer" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
         <g

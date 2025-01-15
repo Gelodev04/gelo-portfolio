@@ -30,7 +30,7 @@ function App() {
         id="style-1"
         className="gradient-background min-h-screen scrollbar  overflow-hidden relative "
       >
-        <div className="max-w-[950px]   pt-1 z-[9999]  overflow-y-scroll h-[100vh] ">
+        <div className="max-w-[950px]    z-[9999]  overflow-y-scroll h-[100vh] ">
           <Navbar />
           <Name />
           <Contact />
